@@ -1,0 +1,18 @@
+1. The differences in running a strategy in the real world versus on historical data are very apparent. First, there is not way
+to gauge your order's impact on the market which is a very important detail. There is no guarantee that your order would
+have filled anywhere near the bid/ ask prices based on historical values alone (especially laking volume info). It only can
+show that the strategy has a higher likelihood of success statistically speaking. The market is not cut at dried. Also,
+it is difficult to model through a backtest latency issues in regards to getting into position at the right price.
+There is also something to be said about the aggregation of the live data directly into the program as apposed to reading
+a from a file. Generally speaking you would want to run the backtest on the actual production system that it is built for to
+understand how the code itself influences the performance.
+
+2. Given more time and resources; I would definitely have developed the entry and exits more thoroughly and with risk/
+reward built in. Also would like to add more indicators like CCI or ATR, and also develop more statistical studies like
+standard deviations etc. Also would have probably tried a hedging algo if I had time to check if the spread between pairs
+mean revert.
+
+3. In theory the algorithm is a bit immature so as far as scaling is concerned; I think that it would need to be developed
+further to watch it's performance with other assets. Given the scope of this exercise; my intention is to display the process
+of loading the values, processes a bit of historical information like in my MA class, then output data that creates an equity
+curve. Most importantly, it the algo is profitable within the time constraints.
